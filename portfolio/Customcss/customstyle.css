@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    padding: 2rem;
+}
+html{
+    font-size: 62.5%;
+}
+.section-portfolio{
+    height: 90vh;
+    background-image: linear-gradient(to right, rgba(255, 68, 0, 0.438), rgba(255, 255, 255, 0.76)), url(../image/gal-1.jpeg);
+    
+    position: relative;
+}
+.portfolio__header{
+    text-align: center;
+    font-size: 5rem;
+    background-image: linear-gradient(to right bottom, orangered, white);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.1);
+    font-family: arial black;
+    animation: moveinleft 0.5s ease;
+    margin-bottom: 3rem;
+}
+.portfolio__navigation{
+    padding: 2rem;
+    font-size: 3rem;
+    border-top: 0.2rem solid black;
+    width: 100%;
+    
+    
+}
+.portfolio__list{
+    list-style: none;
+    
+}
+
+.portfolio__item:not(:last-child){
+    margin-bottom: 3rem;
+}
+.portfolio__link:link,
+.portfolio__link:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: white;
+    padding: 2rem;
+    display: block;
+    width: 30%;
+    transition: all 0.5s;
+    box-shadow: 0 1.2rem 3rem rgba(0, 0, 0, 0.527);
+    border-radius: 100rem;
+    
+}
+
+.portfolio__link-1:hover{
+    width: 32rem;
+    background-color: black;
+    color: white;
+}
+.portfolio__link-2:hover{
+    width: 33rem;
+    background-color: black;
+    color: white;
+}
+.portfolio__link-3:hover{
+    width: 35rem;
+    background-color: black;
+    color: white;
+}
+.portfolio__link-4:hover{
+    width: 33rem;
+    background-color: black;
+    color: white;
+}
+.active:link,
+.active:visited{
+    
+    background-color: black;
+    color: white;
+}
+
+.portfolio__shape{
+    height: 30rem;
+    width: 30rem;
+    background-color: orangered;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    clip-path: circle(50% at 50% 50%);
+}
+.portfolio__image{
+    height: 100%;
+    transform: scale(1.2);
+    transition: all 0.4s;
+}
+.portfolio__caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    font-weight: 700;
+    color: white;
+    font-size: 1.8rem;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.portfolio__shape:hover .portfolio__caption{
+    opacity: 1;
+    transform: translate(-50%, -50%);
+
+}
+.portfolio__shape:hover .portfolio__image{
+    filter: blur(0.3rem);
+    transform: scale(1);
+
+}
+@keyframes moveinleft{
+    0%{
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    80%{
+        transform: translateX(3rem);   
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

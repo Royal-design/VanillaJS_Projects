@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="task-content-1">
+            <h2 class="task-heading">Task List</h2>
+            <form action="index.php">
+                <div class="task-form-group">
+                    <label for="new task" class="task-label">New Task</label>
+                    <input type="text" id="new task" class="task-input" value="Walk the dog">    
+                </div>
+                <input type="submit" value="Add Task" class="btn">
+                <!--<a href="#" class="task-submit task-submit--add">Add Task</a>-->
+            </form>    
+        </div>
+        <div class="task-content-2">
+            <h2 class="task-name" id="task-name">Tasks</h2>
+            <ul class="task-list">
+                <li class="task-item">List Item
+                <a href="#" class="task-remove"> <i class="task-icon icon-arrows-remove"></i></a>
+                </li>
+                <!--comment-->
+                <li class="task-item">List Item
+                <a href="#" class="task-remove"> <i class="task-icon icon-arrows-remove"></i></a>
+                </li>
+                <li class="task-item">List Item
+                <a href="#" class="task-remove"> <i class="task-icon icon-arrows-remove"></i></a>
+                </li>
+                <li class="task-item">List Item
+                <a href="#" class="task-remove"> <i class="task-icon icon-arrows-remove"></i></a>
+                </li>
+                <li class="task-item">List Item
+                <a href="#" class="task-remove"> <i class="task-icon icon-arrows-remove"></i></a>
+                </li>
+                
+            </ul>
+            <a href="#" class="task-submit task-submit--clear">Clear Task</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

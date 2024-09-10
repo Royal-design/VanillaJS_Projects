@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bank app</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- nav -->
+
+      <nav class="nav">
+        <img src="image/real bank logo.png" alt="bank logo" class="logo" />
+
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#" class="nav-link"> Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Blogs</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="nav-login">
+          <button class="btn btn-signin">Sign In</button>
+          <button class="btn btn-signup">Sign Up</button>
+        </div>
+      </nav>
+
+      <!-- home interface -->
+
+      <div class="home">
+        <div class="home-left">
+          <h2 class="home-header">
+            Online <span class="home-skew">Banking</span>
+          </h2>
+          <p class="home-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            corporis delectus est cum, eum aliquid ipsa quasi optio aut ab saepe
+            libero odit laborum ea repellendus, eligendi distinctio? Maiores,
+            neque! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Consectetur, quod excepturi totam odio consequuntur exercitationem
+            fugit error laboriosam porro sequi repudiandae molestias corrupti
+            nemo mollitia, laborum, cum qui nostrum enim.
+          </p>
+          <button class="btn btn-learn">Learn more</button>
+        </div>
+        <div class="home-right">
+          <img src="image/bankhome.jpg" alt="" class="home-image" />
+        </div>
+      </div>
+
+      <!-- movement content -->
+      <div class="account-box hide">
+        <nav class="nav-header">
+          <p class="welcome-text">Welcome back Iyanu!</p>
+          <button class="btn nav-btn">Go Back</button>
+        </nav>
+        <div class="content">
+          <div class="content-left">
+            <div class="account">
+              <div class="account-detail">
+                <p class="account-text">Current Balance</p>
+                <p class="account-date">22/05/2023</p>
+              </div>
+              <p class="account-balance">2,000</p>
+            </div>
+            <div class="account-move">
+              <div class="movement">
+                <div class="movement-deposit">
+                  <div class="deposit-box">
+                    <p class="deposit">Deposit</p>
+                    <p class="deposit-date">7/2/2023</p>
+                  </div>
+                  <p class="deposit-amount">200</p>
+                </div>
+
+                <div class="movement-withdraw">
+                  <div class="withdraw-box">
+                    <p class="withdraw">withdraw</p>
+                    <p class="withdraw-date">7/2/2023</p>
+                  </div>
+                  <p class="withdraw-amount">200</p>
+                </div>
+                <div class="movement-deposit">
+                  <div class="deposit-box">
+                    <p class="deposit">Deposit</p>
+                    <p class="deposit-date">7/2/2023</p>
+                  </div>
+                  <p class="deposit-amount">200</p>
+                </div>
+
+                <div class="movement-withdraw">
+                  <div class="withdraw-box">
+                    <p class="withdraw">withdraw</p>
+                    <p class="withdraw-date">7/2/2023</p>
+                  </div>
+                  <p class="withdraw-amount">200</p>
+                </div>
+                <div class="movement-deposit">
+                  <div class="deposit-box">
+                    <p class="deposit">Deposit</p>
+                    <p class="deposit-date">7/2/2023</p>
+                  </div>
+                  <p class="deposit-amount">200</p>
+                </div>
+
+                <div class="movement-withdraw">
+                  <div class="withdraw-box">
+                    <p class="withdraw">withdraw</p>
+                    <p class="withdraw-date">7/2/2023</p>
+                  </div>
+                  <p class="withdraw-amount">200</p>
+                </div>
+              </div>
+            </div>
+            <div class="summary">
+              <div class="summary-account">
+                <p class="summary-deposit">2450</p>
+                <p class="summary-withdraw">-234</p>
+                <p class="summary-interest">25</p>
+                <p class="summary-sort">
+                  <span class="sort">&uparrow;&downarrow;</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="content-right">
+            <form action="#" method="get">
+              <div class="transfer style">
+                <p class="transfer-text style-text">transfer</p>
+
+                <div class="transfer-box style-box">
+                  <div class="transfer-detail style-detail">
+                    <input
+                      type="text"
+                      id="transferto"
+                      class="transfer-username style-input"
+                    />
+                    <label for="transferto" class="style-label"
+                      >Transfer to</label
+                    >
+                  </div>
+                  <div class="transfer-detail">
+                    <input
+                      type="number"
+                      id="amount"
+                      class="transfer-amount style-input"
+                    />
+                    <label for="amount" class="style-label">Amount</label>
+                  </div>
+                  <button class="transfer-btn style-btn">&rarr;</button>
+                </div>
+              </div>
+            </form>
+
+            <form action="#" method="get">
+              <div class="loan style">
+                <p class="loan-text style-text">request loan</p>
+                <div class="loan-box style-box">
+                  <div class="loan-detail style-detail">
+                    <input
+                      type="number"
+                      id="loanamount"
+                      class="loan-amount style-input"
+                    />
+                    <label for="loanamount" class="loan-label style-label"
+                      >Amount</label
+                    >
+                  </div>
+                  <button class="loan-btn style-btn">&rarr;</button>
+                </div>
+              </div>
+            </form>
+
+            <form action="#" method="get">
+              <div class="delete style">
+                <p class="delete-text style-text">delete account</p>
+                <div class="delete-box style-box">
+                  <div class="delete-detail style-detail">
+                    <input
+                      type="text"
+                      id="deleteun"
+                      class="style-input delete-username"
+                    />
+                    <label for="deleteun" class="delete-label style-label"
+                      >Account Username</label
+                    >
+                  </div>
+                  <div class="delete-detail style-detail">
+                    <input
+                      type="number"
+                      id="pin"
+                      class="delete-pin style-input"
+                    />
+                    <label for="pin" class="delete-label style-label"
+                      >Pin</label
+                    >
+                  </div>
+                  <button class="delete-btn style-btn">&rarr;</button>
+                </div>
+              </div>
+            </form>
+
+            <p class="timer">You will be logged out in 2:00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- foreground -->
+
+    <div class="static visibility"></div>
+
+    <!-- signup -->
+
+    <div class="signup hidden signups">
+      <div class="signup-left">
+        <img class="signup-image" src="image/sign.jpg" alt="" />
+      </div>
+      <div class="signup-right">
+        <div class="static"></div>
+        <i class="fa fa-times signup-close" aria-hidden="true"></i>
+        <div class="signup-center">
+          <p class="signup-header">Create an account</p>
+          <div class="signup-box">
+            <label for="fullname" class="signup-label">Full Name</label>
+            <input
+              type="text"
+              id="fullname"
+              placeholder="fullname"
+              class="signup-input"
+            />
+          </div>
+          <div class="signup-box">
+            <label for="phone number" class="signup-label">Phone Number</label>
+            <input
+              type="text"
+              id="phone number"
+              placeholder="phone number"
+              class="signup-input"
+            />
+          </div>
+          <div class="signup-box">
+            <label for="email" class="signup-label">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="email"
+              class="signup-input"
+            />
+          </div>
+          <div class="signup-box">
+            <label for="password" class="signup-label">Set Password</label>
+            <div class="signup-pass">
+              <input
+                type="password"
+                id="password"
+                placeholder="password"
+                class="signup-input"
+              />
+            </div>
+          </div>
+          <button class="btn signup-btn">Create an account</button>
+          <p class="signup-text">
+            Already have an account?
+            <a href="#" class="signup-link">Sign In</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- signin -->
+    <form action="#" method="get">
+      <div class="signup hidden signin">
+        <div class="signup-left">
+          <img class="signup-image" src="image/signinn.jpg" alt="" />
+        </div>
+        <div class="signup-right">
+          <div class="static"></div>
+          <i class="fa fa-times signup-close" aria-hidden="true"></i>
+          <div class="signup-center">
+            <p class="signup-header">Sign in to your account</p>
+            <div class="signup-box">
+              <label for="username" class="signup-label label-user"
+                >Username</label
+              >
+              <input
+                type="text"
+                id="username"
+                placeholder="username"
+                class="signup-input signin-inp"
+              />
+            </div>
+
+            <div class="signup-box">
+              <label for="yourpassword" class="signup-label pass-label"
+                >Password</label
+              >
+              <div class="signup-pass">
+                <input
+                  type="password"
+                  id="yourpassword"
+                  placeholder="password"
+                  class="signup-input signin-pass"
+                />
+              </div>
+            </div>
+            <button class="btn signup-btn sign-in">Sign In</button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,529 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: arial;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.nav {
+  height: 8rem;
+  background-color: white;
+  box-shadow: inset 0 1px 1rem 2px rgba(0, 0, 0, 0.5);
+  display: flex;
+  padding: 0 1rem;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.nav-item {
+  margin-right: 2rem;
+}
+.nav-link:link, .nav-link:visited {
+  text-decoration: none;
+  color: black;
+  font-size: 1.7rem;
+  font-weight: 500;
+  transition: all 0.4s;
+}
+.nav-link:hover {
+  color: grey;
+}
+.nav-link:active {
+  color: red;
+}
+.nav-login {
+  margin-left: 50rem;
+}
+
+.logo {
+  height: 3rem;
+  width: 13rem;
+  margin-right: 8rem;
+}
+
+.btn {
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem;
+  width: 10rem;
+  color: white;
+  margin-right: 1rem;
+  transition: all 0.4s;
+  font-size: 1.7rem;
+  position: relative;
+  display: inline-block;
+  background-color: #12f10a;
+  z-index: 1;
+}
+.btn:hover::after {
+  transform: scaleX(1.2) scaleY(1.3);
+  opacity: 0;
+}
+.btn::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  background-color: #12f10a;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.btn:active {
+  transform: translateX(-3px);
+  background-color: #096805;
+}
+.btn-signup {
+  background-color: red;
+}
+.btn-signup::after {
+  content: "";
+  background-color: red;
+}
+.btn-learn {
+  background-color: #8ae4ff;
+  width: 15rem;
+  height: 5rem;
+}
+.btn-learn::after {
+  content: "";
+  background-color: #8ae4ff;
+}
+
+.home {
+  display: flex;
+}
+.home-skew {
+  margin-left: 2rem;
+  color: white;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.home-skew:hover::after {
+  background-color: #abe3f1;
+}
+.home-skew::after {
+  top: 0;
+  left: 0;
+  transform: skewX(32deg);
+  position: absolute;
+  content: "";
+  margin-left: -2rem;
+  height: 5rem;
+  width: 20rem;
+  background-color: #8ae4ff;
+  z-index: -1;
+  transition: all 0.4s;
+  display: inline-block;
+}
+.home-left {
+  width: 40%;
+  padding: 5rem;
+}
+.home-right {
+  width: 60%;
+  padding: 2rem;
+}
+.home-header {
+  margin-top: 2rem;
+  font-size: 4rem;
+  margin: 2rem 0;
+}
+.home-text {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  margin-bottom: 2rem;
+}
+.home-image {
+  width: 60rem;
+  height: 51rem;
+}
+
+.static {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  background-color: black;
+  z-index: 1;
+  transition: all 0.4s;
+}
+
+.blur {
+  filter: blur(0.5rem);
+}
+
+.visibility {
+  transition: all 0.4s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.signup {
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 80%;
+  height: 90%;
+  z-index: 1;
+}
+.signup-image {
+  width: 100%;
+  height: 100%;
+}
+.signup-left {
+  width: 60%;
+}
+.signup-right {
+  padding: 1rem;
+  width: 40%;
+  position: relative;
+  color: white;
+}
+.signup-center {
+  z-index: 1;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+.signup-close {
+  color: red;
+  font-size: 2rem;
+  font-weight: bolder;
+  position: absolute;
+  left: 90%;
+  z-index: 1;
+  top: 4%;
+  transition: all 0.4s;
+}
+.signup-close:active {
+  color: #f1aeae;
+}
+.signup-header {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.signup-box {
+  margin-bottom: 2rem;
+}
+.signup-label {
+  display: block;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+.signup-input {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+  transition: all 0.4s;
+}
+.signup-input:focus {
+  outline: 2px solid #9ff7f7;
+}
+.signup-btn {
+  background-color: #8ae4ff;
+  width: 19rem;
+  margin-bottom: 2rem;
+  height: 4rem;
+}
+.signup-btn::after {
+  content: "";
+  background-color: #8ae4ff;
+}
+.signup-text {
+  font-size: 1.3rem;
+}
+.signup-link:visited, .signup-link:link {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #8ae4ff;
+}
+.signup-link:active {
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+.account-box {
+  background-position: center;
+  background-color: #025226;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  opacity: 1;
+  transition: all 0.4s;
+}
+
+.nav-header {
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #025226;
+  height: 8rem;
+  box-shadow: inset 0 1px 1rem 2px rgba(240, 236, 236, 0.5);
+}
+.welcome-text {
+  color: white;
+  font-family: arial;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.content {
+  margin-top: 2rem;
+  padding: 1rem;
+  display: flex;
+}
+.content-left {
+  width: 60%;
+}
+.content-right {
+  width: 40%;
+  margin-top: 5rem;
+}
+
+.account {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  margin-bottom: 2rem;
+}
+.account-text {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.account-date {
+  font-size: 1.7rem;
+}
+.account-balance {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.account-move {
+  display: flex;
+  justify-content: center;
+}
+
+.movement {
+  background-color: white;
+  overflow: scroll;
+  height: 33rem;
+  color: white;
+  width: 55rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: inset 0 1px 1rem 2px rgba(112, 111, 111, 0.5);
+  border: 2px solid #8ae4ff;
+}
+.movement-deposit {
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #06b148;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+.movement-withdraw {
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid red;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.deposit {
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  border-radius: 1rem;
+  width: 9rem;
+  background-color: #06b148;
+}
+.deposit-box {
+  display: flex;
+  align-items: center;
+}
+.deposit-date {
+  font-size: 1.5rem;
+  color: black;
+}
+.deposit-amount {
+  color: black;
+}
+
+.withdraw {
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  border-radius: 1rem;
+  width: 9rem;
+  background-color: red;
+}
+.withdraw-box {
+  display: flex;
+  align-items: center;
+}
+.withdraw-date {
+  font-size: 1.5rem;
+  color: black;
+}
+.withdraw-amount {
+  color: black;
+}
+
+.style {
+  padding: 2rem;
+  margin-bottom: 1rem;
+  width: 40rem;
+  font-size: 1.5rem;
+  height: 8rem;
+  border-radius: 1rem;
+  background-color: #f8c698;
+  box-shadow: inset 0 1px 1rem 2px rgba(112, 111, 111, 0.5);
+}
+.style-text {
+  font-size: 1.8rem;
+  font-weight: bolder;
+  text-transform: capitalize;
+  border-bottom: 2px solid white;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+.style-detail {
+  margin-right: 0.5rem;
+}
+.style-box {
+  display: flex;
+}
+.style-label {
+  font-size: 1.4rem;
+  display: block;
+  transition: all 0.4s;
+  margin-top: 0.2rem;
+  margin-left: 0.3rem;
+}
+.style-input {
+  padding: 0 1rem;
+  display: block;
+  width: 15rem;
+  height: 3rem;
+  border-radius: 1rem;
+  border: none;
+}
+.style-input:focus {
+  outline: 1px solid #f0af4e;
+}
+.style-input:focus + .style-label {
+  transform: translateY(7px);
+  color: red;
+}
+.style-btn {
+  border: none;
+  height: 4rem;
+  width: 4rem;
+  margin-left: 1rem;
+  border-radius: 50%;
+  transition: all 0.4s;
+  box-shadow: inset 0 1px 1rem 2px rgba(167, 166, 166, 0.5);
+}
+.style-btn:active {
+  transform: translateX(-4px);
+  background-color: #dbdada;
+}
+
+.sort {
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.sort:active {
+  color: red;
+}
+
+.hide {
+  display: none;
+  opacity: 0;
+}
+
+.transfer {
+  background-color: #f8c698;
+}
+
+.loan {
+  background-color: rgba(58, 253, 32, 0.445);
+  color: white;
+}
+
+.delete {
+  background-color: aqua;
+}
+
+.summary {
+  margin-top: 2rem;
+}
+.summary-account {
+  margin: 0 auto;
+  width: 80%;
+  font-size: 2rem;
+  justify-content: space-around;
+  display: flex;
+  color: white;
+}
+
+.timer {
+  font-size: 1.5rem;
+  color: white;
+  margin-top: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */

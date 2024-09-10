@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  background-color: skyblue;
+  padding: 10rem;
+  overflow: hidden;
+  font-family: roboto;
+}
+
+.tip {
+  background-color: white;
+  width: 70rem;
+  margin: 0 auto;
+  height: 40rem;
+  column-gap: 4rem;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 1rem;
+}
+.tip__left {
+  position: relative;
+}
+.tip__right {
+  background-color: #04293a;
+  padding: 1rem;
+  color: white;
+  border-radius: 1rem;
+}
+.tip__text {
+  font-family: roboto;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.tip__input {
+  display: block;
+  width: 100%;
+  font-size: 1.5rem;
+  border: none;
+  height: 3rem;
+  background-color: aliceblue;
+  text-align: right;
+  padding: 1rem;
+}
+.tip__input:focus {
+  outline: none;
+}
+.tip__dollar {
+  position: absolute;
+  left: 1rem;
+  top: 3.5rem;
+  font-size: 1.4rem;
+}
+.tip__button {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.tip__btn {
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #04293a;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: white;
+}
+.tip__btn:focus {
+  background-color: #064663;
+  color: white;
+}
+.tip__custom {
+  width: 10rem;
+  border-radius: 0.5rem;
+  background-color: aliceblue;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border: none;
+}
+.tip__custom:focus {
+  outline: none;
+}
+.tip__details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+.tip__user {
+  position: absolute;
+  left: 1rem;
+  font-size: 1.4rem;
+  top: 4rem;
+}
+.tip__result {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.tip__name {
+  font-size: 1.3rem;
+}
+.tip__value {
+  font-size: 2rem;
+  font-family: digital numbers;
+}
+.tip__reset {
+  width: 100%;
+  background-color: aliceblue;
+  height: 3rem;
+  border: none;
+  margin-top: 16rem;
+  text-transform: uppercase;
+}
+.tip__reset:active {
+  background-color: aquamarine;
+}
+
+.form__group {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+/*# sourceMappingURL=style.css.map */

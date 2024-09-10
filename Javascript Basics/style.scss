@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-image: linear-gradient(to left, green, rgb(10, 224, 10));
+}
+.btn {
+  padding: 1.6rem 2rem;
+  border: none;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  font-size: 1.7rem;
+  background-color: rgb(243, 241, 241);
+  cursor: pointer;
+  display: inline-block;
+  &:active {
+    outline: 1px solid white;
+  }
+  &__text {
+    color: red;
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.text {
+  font-family: arial;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.toggle {
+  background-color: red;
+  width: 60rem;
+
+  &__btn {
+    border: none;
+    padding: 0.5rem;
+  }
+  &__text {
+    font-size: 1rem;
+  }
+}
+.time {
+  margin: 0 auto;
+  display: flex;
+  height: 10rem;
+  width: 20rem;
+  justify-content: center;
+  box-shadow: 1rem 1.2rem 1rem rgba(0, 0, 0, 0.5),
+    inset -1rem -1.2rem 1rem rgba(0, 0, 0, 0.5);
+  font-size: 2rem;
+  background-color: white;
+  font-family: 'digital numbers';
+}

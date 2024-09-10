@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply flex  items-center cursor-pointer w-52 mt-16 transition duration-500 hover:bg-purple-700 hover:text-white h-12 justify-center rounded-md bg-gray-300  text-center uppercase text-black text-sm;
+}

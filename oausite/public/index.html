@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>oausite</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/sass/main.css" />
+    <script defer src="src/app.js"></script>
+  </head>
+  <body class="w-full h-full bg-gray-300">
+    <div class="container p-2 fixed top-0 z-10 md:pl-40 md:py-8 hidden">
+      <div class="nav flex justify-between">
+        <div class="school-logo flex items-center">
+          <img class="w-12, h-12" src="src/image/oaulogo.png" alt="logo" />
+          <div class="school-name ml-3">
+            <p
+              class="school-text text-xl md:text-2xl text-purple-700 font-bold"
+            >
+              Obafemi Awolowo University
+            </p>
+            <p
+              class="school-text-font text-md md:text-2xl text-purple-700 font-light"
+            >
+              Electronic Portal
+            </p>
+          </div>
+        </div>
+
+        <div class="bar text-white md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="expand w-6 h-6 md:hidden"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 close hidden md:hidden"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </div>
+        <div class="update hidden md: cursor-pointer md:block">
+          <p class="news text-purple-700 font-bold text-2xl">News & Updates</p>
+          <p class="news-line bg-white"></p>
+        </div>
+      </div>
+      <div class="content w-8/12 md:w-7/12 absolute transform top-36 md:top-40">
+        <p class="welcome-text text-2xl md:text-4xl text-yellow-300">
+          Welcome to
+        </p>
+        <p
+          class="text-white text-2xl content-shadow md:text-4xl uppercase font-bold"
+        >
+          obafemi awolowo university electronic portal
+        </p>
+        <div class="btn">continue to e-portal</div>
+      </div>
+    </div>
+
+    <div class="container fixed left-0 top-0 z-10">
+      <section class="section-header h-32 bg-primary pl-20 pt-2">
+        <div class="section-header-box items-center flex">
+          <img src="src/image/oaulogo.png" alt="logo" class="h-16 w-16" />
+          <div class="header-text ml-8">
+            <p class="name text-4xl text-secondary font-light">
+              Obafemi Awolowo University
+            </p>
+            <p class="name text-4xl text-secondary font-light">
+              Student Information Portal
+            </p>
+          </div>
+        </div>
+      </section>
+      <nav class="section-nav flex h-12 shadow-inner bg-secondary pl-20">
+        <ul class="nav-list flex items-center text-yellow-500">
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item ml-6">
+            <a href="#" class="nav-link">Students</a>
+          </li>
+          <li class="nav-item ml-6"><a href="#" class="nav-link">Staff</a></li>
+          <li class="nav-item ml-6"><a href="#" class="nav-link">FAQs</a></li>
+          <li class="nav-item ml-6">
+            <a href="#" class="nav-link">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="section-body">
+        <div class="section-body-left">
+          <div class="slider">
+            <div class="slide">
+              <img src="src/image/slide 1.jpeg" alt="slide-1" />
+            </div>
+            <div class="slide">
+              <img src="src/image/slide 2.jpeg" alt="slide-2" />
+            </div>
+          </div>
+        </div>
+        <div class="section-body-right">
+          <div class="slider2">
+            <div class="slide2">
+              <h2 class="slider-header text-lg font-bold">Importance Notice</h2>
+              <p class="slider-body">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa,
+                officiis nam. Aperiam beatae laboriosam sunt commodi?
+                Repellendus laboriosam, facere quo ea optio amet, nulla in
+                doloribus ducimus aliquam, totam laudantium.
+              </p>
+            </div>
+            <div class="slide2">
+              <h2 class="slider-header text-lg font-bold">Importance Notice</h2>
+              <p class="slider-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, at voluptates totam cum reprehenderit quos aspernatur
+                voluptas libero vitae ipsa ducimus doloribus, aperiam ipsam
+                deserunt itaque consequuntur ipsum! Amet, non.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-footer"></section>
+    </div>
+
+    <div class="video-container hidden fixed top-0 left-0">
+      <video autoplay muted loop class="video-size">
+        <source src="src/video/oau video.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop class="">
+        <source src="src/video/oau video.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </body>
+</html>

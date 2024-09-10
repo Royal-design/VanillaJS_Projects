@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tip calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/brands.css" />
+  </head>
+  <body>
+    <div class="tip">
+      <section class="tip__left">
+        <form class="form">
+          <div class="form__group">
+            <p class="tip__text">Bill</p>
+            <i class="fas fa-dollar-sign tip__dollar"></i>
+            <input
+              type="text"
+              class="tip__input tip__bill"
+              placeholder="enter bill value"
+            />
+          </div>
+          <div class="form__group">
+            <p class="tip__text">Select Tip %</p>
+            <div class="tip__button">
+              <button type="button" class="tip__btn" value="5">5%</button>
+              <button type="button" class="tip__btn" value="10">10%</button>
+              <button type="button" class="tip__btn" value="15">15%</button>
+              <button type="button" class="tip__btn" value="25">25%</button>
+              <button type="button" class="tip__btn" value="50">50%</button>
+              <input
+                type="text"
+                class="tip__custom"
+                oninput="custom()"
+                value="custom"
+              />
+            </div>
+          </div>
+          <div class="form__group">
+            <div class="tip__details">
+              <p class="tip__text">Number of People</p>
+              <p class="tip__text" id="error">Can't be zero</p>
+            </div>
+            <input
+              type="text"
+              class="tip__input tip__people"
+              placeholder="enter number of people"
+              oninput="colorDisplay()"
+            />
+            <i class="fa fa-user tip__user" aria-hidden="true"></i>
+          </div>
+        </form>
+      </section>
+      <section class="tip__right">
+        <div class="tip__box">
+          <section class="tip__result">
+            <div class="tip__name">
+              <p class="tip__amount">Tip Amount</p>
+              <p class="tip__person">/ person</p>
+            </div>
+            <p class="tip__value totaltip">$0.00</p>
+          </section>
+          <section class="tip__result">
+            <div class="tip__name">
+              <p class="tip__amount">Total</p>
+              <p class="tip__person">/ person</p>
+            </div>
+            <p class="tip__value totalbill">$0.00</p>
+          </section>
+          <button type="button" class="tip__reset" onclick="reset()">
+            reset
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <script src="apk.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pig game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main class="panel">
+        <section class="panel-side panel-side--0 panel-side-active" id="panel-side-0">
+            <h2 class="panel-name" id="name-0">Player 1</h2>
+            <p class="panel-score" id="score-0">43</p>
+            <div class="panel-box">
+                <h3 class="panel-current">Current</h3>
+                <p class="panel-current-score" id="current-0">0</p>
+            </div>
+        </section>
+        <section class="panel-side panel-side--1" id="panel-side-1">
+            <h2 class="panel-name" id="name-1">Player 2</h2>
+            <p class="panel-score" id="score-1">23</p>
+            <div class="panel-box">
+                <h3 class="panel-current">Current</h3>
+                <p class="panel-current-score" id="current-1">0</p>
+            </div>
+        </section>
+        <img src="image/dice-5.png" id="dice-1" class="dice" alt="">
+        <img src="image/dice-5.png" id="dice-2" class="dice" alt="">
+        <button class="btn btn-new" id="btn-new">New Game</button>
+        <button class="btn btn-roll" id="btn-roll">Dice roll</button>
+        <button class="btn btn-hold" id="btn-hold">Hold</button>
+        <p class="final" id="final"></p>
+
+       <!-- <input type="text" class="final" placeholder="final score" id="final" >-->
+    </main>
+    <script src="dice.js"></script>
+</body>
+</html>

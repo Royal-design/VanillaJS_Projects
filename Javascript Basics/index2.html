@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bank</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div class="bank">
+      <header class="bank__header">
+        <div class="bank__box">
+          <img src="image/royal logo.png" alt="logo" class="bank__logo" />
+          <p class="bank__text">Login to get started!</p>
+        </div>
+        <nav class="bank__nav">
+          <form>
+            <input
+              type="text"
+              class="bank__input bank__username"
+              placeholder="username"
+            />
+            <input
+              type="password"
+              class="bank__input bank__password"
+              placeholder="password"
+              maxlength="4"
+            />
+            <button class="bank__btn">LOGIN &rarr;</button>
+          </form>
+        </nav>
+      </header>
+      <main class="main">
+        <div class="bank__balance-box">
+          <div class="bank__balance-info">
+            <p class="bank__balance-text">Current Balance</p>
+            <p class="bank__balance-time">As of September 26th, 2022</p>
+          </div>
+          <p class="bank__balance-value">2000</p>
+        </div>
+        <div class="bank__container">
+          <section class="bank__movement">
+            <!-- <div class="bank__movement-box">
+              <div class="bank__movement-details">
+                <div class="bank__movement-withdraw bank__movement-left">
+                  Withdraw
+                </div>
+                <p class="bank__movement-date">23/05/2021</p>
+              </div>
+              <p class="bank__movement-value">2000</p>
+            </div>        
+             -->
+          </section>
+          <section class="bank__transaction">
+            <form>
+              <div class="bank__transfer bank__transaction-box">
+                <p class="bank__transfer-header bank__transaction-text">
+                  Transfer
+                </p>
+                <div class="bank__transfer-flex bank__transaction-flex">
+                  <div class="bank__transfer-detail">
+                    <input
+                      type="text"
+                      class="bank__transaction-input bank__transfer-to"
+                    />
+                    <p class="bank__transfer-text bank__transaction-label">
+                      Transfer to
+                    </p>
+                  </div>
+                  <div class="bank__transfer-detail">
+                    <input
+                      type="number"
+                      class="bank__transaction-input bank__transfer-amount"
+                    />
+                    <p class="bank__transfer-text bank__transaction-label">
+                      Amount
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    class="bank__transaction-btn bank__transfer-btn"
+                  >
+                    &rarr;
+                  </button>
+                </div>
+              </div>
+              <div class="bank__loan bank__transaction-box">
+                <p class="bank__loan-request bank__transaction-text">
+                  Request Loan
+                </p>
+                <div class="bank__transaction-flex">
+                  <div class="bank__loan-detail">
+                    <input
+                      type="number"
+                      class="bank__transaction-input bank__loan-amount"
+                    />
+                    <p class="bank__input-text bank__transaction-label">
+                      Amount
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    class="bank__transaction-btn bank__loan-btn"
+                  >
+                    &rarr;
+                  </button>
+                </div>
+              </div>
+              <div class="bank__delete bank__transaction-box">
+                <p class="bank__delete-account bank__transaction-text">
+                  Delete Account
+                </p>
+                <div class="bank__delete-flex bank__transaction-flex">
+                  <div class="bank__delete-detail">
+                    <input
+                      type="text"
+                      class="bank__transaction-input bank__delete-input"
+                    />
+                    <p class="bank__delete-text bank__transaction-label">
+                      Account Username
+                    </p>
+                  </div>
+                  <div class="bank__delete-detail">
+                    <input
+                      type="password"
+                      class="bank__transaction-input bank__delete-pin"
+                    />
+                    <p class="bank__account-text bank__transaction-label">
+                      Pin
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    class="bank__transaction-btn bank__delete-btn"
+                  >
+                    &rarr;
+                  </button>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+        <div class="bank__summary">
+          <div class="bank__summary-box">
+            <p class="bank__summary-deposit bank__summary-move">
+              <span class="deposit">IN:</span> 10000
+            </p>
+            <p class="bank__summary-withdraw bank__summary-move">
+              <span>OUT:</span> 20000
+            </p>
+            <p class="bank__summary-interest bank__summary-move">
+              <span>interest:</span> 0.02
+            </p>
+            <p class="bank__sort bank__summary-move">
+              &ShortUpArrow;&ShortDownArrow;
+            </p>
+          </div>
+          <p class="bank__summary-timeout">
+            You will be logged out in: <span class="bank__timer"> 3:00</span>
+          </p>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

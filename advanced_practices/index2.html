@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>modal</title>
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+  <body>
+    <button class="form__btn form__click">click</button>
+    <form action="#" class="form hidden">
+      <div class="form__bar">
+        <div class="form__dots">
+          <div class="form__dot"></div>
+          <div class="form__dot"></div>
+          <div class="form__dot"></div>
+        </div>
+        <p class="form__close form__exit">&times;</p>
+      </div>
+      <div class="form__group">
+        <label for="username" class="form__label">Username</label>
+        <input
+          type="text"
+          class="form__input"
+          id="username"
+          placeholder="Username"
+        />
+      </div>
+      <div class="form__group">
+        <label for="password" class="form__label">Password</label>
+        <input
+          type="password"
+          id="password"
+          class="form__input"
+          placeholder="Password"
+        />
+      </div>
+      <div class="form__btns">
+        <button class="form__btn form__login">login</button>
+        <button class="form__btn form__exit form__red">close</button>
+      </div>
+    </form>
+
+    <button class="panel">
+      click
+      <span class="panel__icon"
+        ><i class="fa fa-plus icon" aria-hidden="true"></i
+      ></span>
+    </button>
+    <div class="panel__text">
+      <img src="image/gal-2.jpeg" class="image" alt="" />
+    </div>
+    <button class="panel">
+      click
+      <span class="panel__icon"
+        ><i class="fa fa-plus icon" aria-hidden="true"></i
+      ></span>
+    </button>
+
+    <div class="panel__text">
+      <img src="image/gal-3.jpeg" class="image" alt="" />
+    </div>
+
+    <form action="#" class="conversion__form">
+      <label for="kilogram" class="conversion__label">Kilogram</label>
+      <input type="number" class="conversion__input conversion__input-kg" />
+      <label for="kilogram" class="conversion__label">gram</label>
+      <input type="number" class="conversion__input conversion__input-g" />
+      <label for="kilogram" class="conversion__label">milligram</label>
+      <input type="number" class="conversion__input conversion__input-mg" />
+    </form>
+
+    <div class="imageBox">
+      <div class="image1">
+        <img src="image/gal-2.jpeg" alt="" class="images" />
+      </div>
+      <div class="image1">
+        <img src="image/gal-3.jpeg" alt="" class="images" />
+      </div>
+      <div class="image1">
+        <img src="image/gal-4.jpeg" alt="" class="images" />
+      </div>
+    </div>
+    <div class="flex">
+      <div class="calculator">
+        <div class="calculator__screen">display</div>
+        <div class="calculator__flex">
+          <p class="calculator-value" id="0">0</p>
+          <p class="calculator-value" id="1">1</p>
+          <p class="calculator-value" id="2">2</p>
+          <p class="calculator-value" id="3">3</p>
+          <p class="calculator-value" id="4">4</p>
+          <p class="calculator-value" id="5">5</p>
+          <p class="calculator-value" id="6">6</p>
+          <p class="calculator-value" id="7">7</p>
+          <p class="calculator-value" id="8">8</p>
+          <p class="calculator-value" id="9">9</p>
+          <p class="calculator-value" id="*">X</p>
+          <p class="calculator-value" id="/">/</p>
+          <p class="calculator-value" id="+">+</p>
+          <p class="calculator-value" id="-">-</p>
+          <p class="calculator-value enter">Enter</p>
+        </div>
+      </div>
+
+      <form action="#" class="form__container">
+        <div class="form__container-group">
+          <label for="products" class="form__container-label"
+            >input product</label
+          >
+          <input
+            id="products"
+            type="text"
+            class="form__container-input"
+            placeholder="enter product name"
+          />
+          <button class="form__container-btn form__container-add">add</button>
+        </div>
+
+        <ul class="form__container-list">
+          <li class="form__container-item">
+            clothe <span class="form__container-times">x</span>
+          </li>
+          <li class="form__container-item">
+            fan <span class="form__container-times">x</span>
+          </li>
+          <li class="form__container-item">
+            shoe <span class="form__container-times">x</span>
+          </li>
+          <li class="form__container-item">
+            bag <span class="form__container-times">x</span>
+          </li>
+        </ul>
+        <button class="form__container-btn form__container-clear">clear</button>
+      </form>
+    </div>
+
+    <script src="app2.js"></script>
+  </body>
+</html>

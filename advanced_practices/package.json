@@ -1,0 +1,20 @@
+{
+  "name": "newjs",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel index6.html",
+    "build": "parcel build index6.html"
+  },
+  "author": "Emmy",
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "leaflet": "^1.9.4",
+    "lodash-es": "^4.17.21",
+    "regenerator-runtime": "^0.13.7"
+  },
+  "devDependencies": {
+    "parcel": "^2.9.3"
+  }
+}

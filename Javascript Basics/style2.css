@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #012330;
+  font-family: arial;
+  color: #fff;
+}
+
+.bank {
+  width: 100%;
+  height: 100vh;
+}
+.bank__header {
+  height: 6rem;
+  padding: 1rem;
+  background-color: #666666;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bank__box {
+  display: flex;
+  align-items: center;
+}
+.bank__text {
+  font-size: 2rem;
+}
+.bank__logo {
+  width: 4rem;
+  margin-right: 4rem;
+}
+.bank__input {
+  height: 2.8rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 2rem;
+  margin-left: 1rem;
+  transition: all 0.4s;
+  box-shadow: inset 0 0 1rem rgba(0, 0, 0, 0.4);
+}
+.bank__input:focus {
+  outline: none;
+  border: 1px solid green;
+}
+.bank__input:hover {
+  transform: translateX(-0.4rem);
+}
+.bank__btn {
+  border: none;
+  border-radius: 3rem;
+  display: inline-block;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  box-shadow: inset 0 0 1rem rgba(0, 0, 0, 0.4);
+  background-color: white;
+  transition: all 0.4s;
+  position: relative;
+  outline: none;
+}
+.bank__btn:hover {
+  transform: translateX(-0.3rem);
+}
+.bank__btn:hover::after {
+  transform: scaleX(1.3) scaleY(1.5);
+  opacity: 0;
+  background-color: #fff;
+}
+.bank__btn::after {
+  content: "";
+  border: none;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 3rem;
+  top: 0;
+  left: 0;
+  transition: all 0.4s;
+  z-index: -1;
+}
+.bank__btn:active {
+  outline: 1px solid green;
+  transform: translateY(0);
+}
+
+.main {
+  transition: all 0.4s;
+  opacity: 0;
+  margin-top: 4rem;
+}
+
+.bank__balance-box {
+  display: flex;
+  padding: 0 21rem;
+}
+.bank__balance-info {
+  margin-right: 33rem;
+}
+.bank__balance-text {
+  font-size: 3rem;
+}
+.bank__balance-time {
+  font-size: 1.5rem;
+}
+.bank__balance-value {
+  font-size: 3rem;
+}
+.bank__container {
+  display: flex;
+  margin-top: 3rem;
+  margin-left: 20rem;
+}
+.bank__movement {
+  width: 69rem;
+  color: #000;
+  height: 40rem;
+  overflow: scroll;
+  padding: 2rem;
+  box-shadow: inset 0 0 1rem rgba(0, 0, 0, 0.4);
+  border-radius: 2rem;
+  background-color: white;
+  font-size: 1.4rem;
+  margin-right: 10rem;
+  display: grid;
+  grid-template-rows: repeat(5, 5rem);
+  grid-template-columns: 1fr;
+}
+.bank__movement-box {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  grid-template-rows: 1;
+  gap: 40rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  transition: all 0.4s;
+  padding: 1rem;
+}
+.bank__movement-box:nth-child(even) {
+  border: 1px solid grey;
+}
+.bank__movement-box:nth-child(odd) {
+  border-top: 1px solid red;
+}
+.bank__movement-details {
+  display: flex;
+  align-items: center;
+}
+.bank__movement-left {
+  margin-right: 2rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  margin-top: -0.1rem;
+  color: #000;
+}
+.bank__movement-withdraw {
+  background-color: red;
+}
+.bank__movement-deposit {
+  background-color: #12f812;
+  color: #fff;
+}
+.bank__transaction-text {
+  font-size: 2rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+}
+.bank__transaction-label {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+.bank__transaction-box {
+  color: #fff;
+  border-radius: 1rem;
+  width: 35rem;
+  background-color: #f83f07;
+  height: 12rem;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  box-shadow: inset 0 0 1rem rgba(0, 0, 0, 0.4);
+}
+.bank__transaction-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bank__transaction-input {
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  border: none;
+  width: 14rem;
+  text-align: center;
+  font-size: 1.5rem;
+  transition: all 0.4s;
+  height: 3rem;
+}
+.bank__transaction-input:focus {
+  border: 1px solid green;
+  outline: none;
+  transform: translateX(-0.2rem);
+}
+.bank__transaction-input:hover {
+  transform: translateX(0.2rem);
+}
+.bank__transaction-btn {
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  height: 2rem;
+  width: 2rem;
+  position: relative;
+  transition: all 0.4s;
+  display: inline-block;
+}
+.bank__transaction-btn:hover {
+  transform: translateX(-0.1rem);
+}
+.bank__transaction-btn:hover::after {
+  transform: scaleX(1.3) scaleY(1.5);
+  opacity: 0;
+  background-color: green;
+}
+.bank__transaction-btn::after {
+  content: "";
+  border: none;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  transition: all 0.4s;
+  z-index: -1;
+}
+.bank__transaction-btn:active {
+  outline: 1px solid green;
+  transform: translateX(0);
+}
+.bank__transfer {
+  background-color: #f83f07;
+}
+.bank__transfer-header {
+  border-bottom: 1px solid white;
+}
+.bank__transfer-input {
+  background-color: #fff;
+}
+.bank__transfer-btn {
+  background-color: white;
+}
+.bank__loan {
+  color: #000;
+  background-color: #fff;
+}
+.bank__loan-request {
+  border-bottom: 1px solid green;
+  margin-bottom: 1rem;
+}
+.bank__loan-amount {
+  border: 1px solid grey;
+}
+.bank__loan-btn {
+  margin-right: 12rem;
+}
+.bank__delete-account {
+  border-bottom: 1px solid #fff;
+}
+.bank__summary {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  margin-left: 20rem;
+}
+.bank__summary-box {
+  display: flex;
+  margin-right: 26rem;
+}
+.bank__summary-move {
+  margin-right: 9rem;
+  transition: all 0.4s;
+}
+.bank__summary-timeout {
+  font-size: 1.5rem;
+}
+.bank__sort {
+  cursor: pointer;
+}
+.bank__sort:hover {
+  color: #666;
+}
+
+/*# sourceMappingURL=style2.css.map */

@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui;
+  color: #555;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+}
+
+.bible {
+  width: 50%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.bible-header {
+  padding: 1rem;
+  background-color: green;
+  color: white;
+  border-radius: 1rem;
+}
+.bible-form {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.bible-box {
+  display: inline-block;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 2px;
+  background-color: white;
+  position: relative;
+}
+.bible-box::after {
+  content: "";
+  transform: translate(-50%, -50%);
+  border-radius: 2px;
+  background-color: green;
+  height: 70%;
+  width: 70%;
+  left: 50%;
+  top: 50%;
+  display: inline-block;
+  position: absolute;
+  visibility: hidden;
+  transition: all 0.4s;
+}
+.bible-label {
+  font-size: 1.2rem;
+}
+.bible-check {
+  visibility: hidden;
+}
+.bible-check:checked ~ .bible-box::after {
+  visibility: visible;
+}
+.bible-input {
+  border-radius: 1rem;
+  border: none;
+  padding: 1rem;
+}
+.bible-input:focus {
+  outline: none;
+  border: 2px solid grey;
+}
+.bible-body {
+  color: black;
+  font-size: 1.5rem;
+  padding: 1rem;
+  background-color: white;
+  margin-top: 2rem;
+}
+.bible-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  border-radius: 2rem;
+  height: 3rem;
+  background-color: #0db41b;
+  width: 7rem;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.bible-search:active {
+  transform: translateX(-3px);
+  background-color: #54f761;
+  color: #f7f7f7;
+}
+
+/*# sourceMappingURL=style5.css.map */

@@ -1,0 +1,94 @@
+.school-text-font {
+  font-family: Brush Script MT;
+  color: white;
+}
+
+.news {
+  transition: all 0.4s;
+}
+.news-line {
+  width: 0;
+}
+.news:hover {
+  color: white;
+}
+.news:hover + .news-line {
+  transition: all 0.3s linear;
+  height: 0.25rem;
+  width: 12rem;
+}
+
+.section-header {
+  width: 90rem;
+}
+.section-nav {
+  width: 90rem;
+}
+
+.nav-link:active, .nav-link:visited, .nav-link:link {
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* SLIDER */
+.slider {
+  max-width: 100rem;
+  height: 20rem;
+  position: relative;
+  /* IN THE END */
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100rem;
+  height: 20rem;
+  /* THIS creates the animation! */
+  transition: transform 0.5s;
+}
+
+.slide > img {
+  /* Only for images that have different size than slide */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-body {
+  width: 90rem;
+  display: flex;
+}
+.section-body-left {
+  margin-left: 5rem;
+  background-color: red;
+  width: 50rem;
+}
+.section-body-right {
+  width: 25rem;
+  background-color: grey;
+}
+
+.slider2 {
+  width: 100%;
+  height: 20rem;
+  position: relative;
+  /* IN THE END */
+  overflow: hidden;
+}
+
+.slide2 {
+  padding: 1rem;
+  margin-right: 2rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 20rem;
+  /* THIS creates the animation! */
+  transition: transform 0.5s;
+}
+
+/*# sourceMappingURL=main.css.map */

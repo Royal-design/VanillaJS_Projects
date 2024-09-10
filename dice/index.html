@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dice game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="player">
+            <div class="player__left player__color-toggle" id="player-0">
+                <p class="player__name" id="name-0">Player 1</p>
+                <div class="player__score-box">
+                    <p class="player__score-name">score</p>
+                    <p class="player__score" id="score-0">20</p>
+                </div>
+
+                <div class="player__current-box">
+                    <p class="player__current-name">Current Score</p>
+                    <p class="player__current-score" id="current-0">22</p>
+                </div>
+            </div>
+            <div class="player__right" id="player-1">
+                <p class="player__name" id="name-1">Player 2</p>
+                <div class="player__score-box">
+                    <p class="player__score-name">score</p>
+                    <p class="player__score" id="score-1">23</p>
+                </div>
+                <div class="player__current-box">
+                    <p class="player__current-name">Current Score</p>
+                    <p class="player__current-score" id="current-1">2</p>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-roll" id="btn-roll">Roll</button>
+        <button type="button" class="btn btn-hold" id="btn-hold">hold</button>
+        <button type="button" class="btn btn-new" id="btn-new">new</button>
+        <img src="image/dice-2.png" class="dice dice-1" id="dice-0" alt="dice-2">
+        <img src="image/dice-3.png" class="dice dice-2" id="dice-1" alt="dice-3">
+        <p class="final__score" id="final">23</p>
+    </div>
+    <script src="apk.js"></script>
+</body>
+
+</html>

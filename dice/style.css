@@ -1,0 +1,166 @@
+*,
+*::after,
+*::before {
+  content: "";
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #1f0902;
+}
+
+.container {
+  width: 80%;
+  height: 80vh;
+  background-color: #f59d7d;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.582);
+  position: absolute;
+}
+
+.player {
+  display: flex;
+  height: 100%;
+}
+.player__left {
+  width: 50%;
+}
+.player__right {
+  width: 50%;
+}
+.player__name {
+  font-family: arial;
+  font-size: 3rem;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  position: relative;
+}
+.player__score-box {
+  height: 7rem;
+  width: 10rem;
+  background-color: black;
+  border-radius: 1rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.player__score {
+  font-family: arial;
+  color: white;
+  font-size: 2rem;
+}
+.player__score-name {
+  color: white;
+  font-family: arial;
+  font-size: 2rem;
+  background-color: grey;
+  margin-bottom: 1rem;
+}
+.player__current-box {
+  height: 9rem;
+  width: 13rem;
+  background-color: black;
+  border-radius: 1rem;
+  margin: 15rem auto;
+  text-align: center;
+}
+.player__current-name {
+  color: white;
+  font-family: arial;
+  font-size: 2rem;
+  background-color: grey;
+  margin-bottom: 1rem;
+}
+.player__current-score {
+  font-family: arial;
+  color: white;
+  font-size: 2rem;
+}
+.player__color-toggle {
+  background-color: orangered;
+}
+.player__color-winner {
+  background-color: green;
+}
+.player__winner::after {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: 35rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.dice {
+  width: 7rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+.dice-1 {
+  top: 30%;
+}
+.dice-2 {
+  top: 50%;
+}
+
+.btn {
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  font-family: arial;
+  font-weight: bolder;
+  text-transform: uppercase;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  transition: all 0.4s;
+  box-shadow: 0 0 1.3rem rgba(0, 0, 0, 0.548);
+}
+.btn-hold {
+  top: 85%;
+}
+.btn-new {
+  top: 10%;
+}
+.btn-roll {
+  top: 70%;
+}
+.btn:hover {
+  margin-top: -5px;
+}
+.btn:active {
+  margin-top: 5px;
+}
+
+.final__score {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 95%;
+  background-color: green;
+  box-shadow: 0 0 1.3rem rgba(0, 0, 0, 0.548);
+  color: white;
+  border: 1px solid white;
+  width: 8rem;
+  text-align: center;
+  padding: 1rem;
+  font-family: arial;
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
